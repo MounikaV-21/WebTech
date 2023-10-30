@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="formValidation.js"></script>
+    <style>
+        .errorClass{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1Id">Form</h1>
+    <h1 id="h1Id2"></h1>
+    <form name="formName" class="formClass" onsubmit="return validateForm()">
+        <div>
+           Name <span style="color: red;">*</span> <input type="text" id="nameId" name="nameName" required>
+           <span class="errorClass"></span>
+        </div>
+        <div>
+            Contact<span style="color: red;">*</span> <input type="text" id="contactId" name="contactName" required>
+            <span class="errorClass" id="spanContactId">Here</span>
+        </div>
+         <div>
+            Password <input type="password" minlength="5" name="Pass1name" required>
+            <span class="errorClass" id="passwordSpanId"></span>
+        </div>
+        <div>
+            Confirm Password <input type="password" minlength="5" name="Pass2name" required>
+            <span class="errorClass" id="confirmPasswordSpanId" ></span>
+        </div> 
+        <br>
+        <button class="btnClass" type="submit" value="submit">Submit</button>
+        <button class="btnClass" type="reset" value="clear" onclick="validate()">Clear</button>
+
+    </form>
+    <br>
+   
+    
+</body>
+</html>

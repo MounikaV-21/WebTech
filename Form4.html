@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+    <script>
+        function clickHere(){
+            console.log('hey im here');
+            alert('Hello');
+            console.log('hey im not here');
+          
+        }
+
+    </script>
+</head>
+<body>
+
+    <div>
+        <form name="newForm" onsubmit="validationMethod()">
+            <div>
+                <label for="nameId">Name:</label><input type="text" id="nameId" name="nameName">
+            </div><br>
+            <div>
+                <label for="instituteId">Institute Name:</label><input type="text" id="instituteId" name="instituteName" placeholder="X-workz">
+            </div><br>
+            <div>
+                <label for="emailId">Email:</label><input type="email" id="emailId" name="emailName" placeholder="mounika@gmail.com">
+            </div><br>
+            <div>
+                <label for="numberId">Number:</label><input type="number" id="numberId" name="numberName">
+            </div>
+
+        </form><br>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+
+        </div><br>
+        <div>
+            <button onclick="clickHere()">Click Here</button>
+        </div>
+    </div>
+</body>
+</html>

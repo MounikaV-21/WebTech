@@ -1,0 +1,40 @@
+.divClass2{
+    color: rgb(55, 89, 5);
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+}
+
+.divClass3{
+    color: chocolate;
+    background-color: beige;
+    position: absolute;
+}
+
+p{
+    display:flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 10;
+    margin-right: 10;
+    color: rgb(5, 110, 75);
+}
+
+.pClass1{
+    display:inline;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    margin-left: 30;
+    margin-right: 30;
+    color: blueviolet;
+}
+
+.pClass2{
+    display:contents;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    margin-left: 25;
+    margin-right: 25;
+    color:rgb(148, 148, 6);
+}

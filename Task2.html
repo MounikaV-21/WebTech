@@ -1,0 +1,274 @@
+<!---<!DOCTYPE html>
+<html>
+    <head>
+        <title>new Page</title>
+       <link href="Task2.css" rel="stylesheet"> 
+       
+            
+        
+    </head>
+    <body class="bodyClass">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Form.html">Home</a></li>
+                    <li><a>Documents</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+                <div class="search">
+                    <input type=text id="search" name="search" placeholder="search anything here..">
+
+                </div>
+            </nav>
+        </header>
+        <form>
+            <h2>Login Form</h2>
+            <div>
+                <table>
+                    <tr>
+                    <td>UserName:</td>
+                    <td><input type="text" id="nameId" name="nameName"></td></tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" id="passwordId" name="passwordName"></td></tr>
+                        <tr>
+                            <td><label>Email:</label></td>
+                            <td><input type="text" id="emailId" name="emailName"></td></tr>
+                        <tr>
+                                <td><label>Phone No:</label></td>
+                                <td><input type="number" id="numberId" name="numberName"></td></tr>
+                </table>
+            </div>
+            
+        </form>
+        
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>New form</title>
+    <script src="Task2.js"></script>
+    <style>
+        .form {
+            margin-top: -250px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .nav1 {
+            padding: auto;
+            background-color: black;
+            border-radius: 10px;
+            height: 70px;
+        }
+
+        li {
+            color: white;
+            float: left;
+            padding: 20px;
+            font-size: larger;
+            margin-top: 1px;
+        }
+
+        .search-box {
+            float: right;
+            margin-top: -80px;
+            margin-right: 20px;
+            width: 200px;
+            height: 25px;
+        }
+
+        nav ul li a:hover {
+            color: crimson;
+        }
+
+        .dropDown {
+            padding: 20px;
+            background-color: black;
+            color: white;
+            border-color: black;
+            margin-top: -18px;
+            margin-left: -20px;
+            font-size: large;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        .dropDwn-Content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropDwn-Content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropDown:hover .dropDwn-Content {
+            display: block;
+        }
+
+        .dropDwn-Content {
+            color: black;
+            font-size: large;
+            font-weight: 300;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <ul>
+                <li onclick="clickHere()">Home</li>
+                <li><a href="Profile.html" target="_blank">Edit</a></li>
+                <li ondblclick="doubleClick()">Contact</li>
+                <li><button class="dropDown">About</bu>
+                        <div class="dropDwn-Content">
+                            <a href="#">Company</a>
+                            <a href="#">Courses</a>
+                            <a href="#">Registration process</a>
+                        </div>
+                </li>
+            </ul>
+            <input type="search" class="search-box" name="searchName" placeholder="search...">
+        </nav>
+        <form class="form">
+            <table>
+                <header>
+                    <div>
+                        <tr>
+                            <td>
+                                <h2>Registration form</h2>
+                            </td>
+                        </tr>
+                    </div>
+                </header>
+                <main>
+                    <div>
+                        <tr>
+                            <td><label>Name:</label></td>
+                            <td><input type="text" name="nameName" id="nameId" placeholder="James" required><span
+                                    style="color: red;"> *</span></td>
+                        </tr>
+                    </div><br>
+                    <div>
+                        <tr>
+                            <td><label>Phone No: </label></td>
+                            <td><input type="number" id="numberId" name="numberName" placeholder="9880461129" required>
+                                <span style="color: red;">*</span>
+                            </td>
+                        </tr>
+
+                    </div><br>
+                    <div>
+                        <tr>
+                            <td><label>Email: </label></td>
+                            <td><input type="email" id="emailId" name="emailName"
+                                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                                <span style="color: red;">*</span>
+                            </td>
+                        </tr>
+                    </div><br>
+                    <div>
+                        <tr>
+                            <td><label>Password: </label></td>
+                            <td><input type="password" id="passwordId" name="passwordName" required
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> <span style="color: red;">*</span>
+                            </td>
+                        </tr>
+                    </div><br>
+                    <div>
+                        <tr>
+                            <td> <label>Confirm Password: </label></td>
+                            <td><input type="password" id="confirmPasswordId" name="confirmPasswordName" required
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> <span style="color: red;">*</span>
+                            </td>
+                        </tr>
+                    </div><br>
+                    <div>
+                        <tr>
+                            <td> <label>DOB: </label></td>
+                            <td><input type="date" id="dobId" name="dobName" required> <span
+                                    style="color: red;">*</span>
+                            </td>
+                        </tr>
+
+                    </div><br>
+                    <div>
+                        <tr>
+                            <td><label>Gender: </label></td>
+                            <td><input type="radio" id="radioMale" name="radioName">Male
+                                <input type="radio" id="radioFemale" name="radioName"> Female
+                            </td>
+                        </tr>
+
+                    </div><br>
+                    <div>
+                        <tr>
+                            <td><label>Select the course name:</label><br><br></td>
+                            <td><input type="checkbox" id="checkBoxId1" name="checkName">Java<br>
+                                <input type="checkbox" id="checkBoxId2" name="checkName">Web Technology<br>
+                                <input type="checkbox" id="checkBoxId3" name="checkName">MySQL
+                            </td>
+                        </tr>
+
+                    </div><br>
+                    <div id="div1">
+                        <tr>
+                            <td><label>Documents: </label></td>
+                            <td><input type="file" id="fileId" name="fileName" required><span
+                                    style="color: red;">*</span>
+                            </td>
+                        </tr>
+                    </div><br><br>
+                    <div>
+                        <tr>
+                            <td><button type="submit" name="buttonName" id="buttonId" value="Submit">Submit</button>
+                                <button type="reset" name="cancel" id="resetId" value="Clear">Clear</button>
+                            </td>
+                        </tr>
+                    </div><br>
+                    <div>
+                        <tr>
+                            <td><label>Signature: </label></td>
+                            <td><img src="Untitled.png" width="200px" height="100px" style="vertical-align: middle;">
+                            </td>
+                        </tr>
+                    </div>
+                </main><br><br>
+                <footer>
+                    <div>
+                        <tr>
+                            <td>
+                                <h4>Address: </h4>
+                                <address>#66/1 Kolar<br>Bangarpet<br> Karnataka - 563116<br>India
+                                </address>
+                            </td>
+                        </tr>
+
+                    </div>
+                </footer>
+            </table>
+        </form>
+</body>
+
+</html>
